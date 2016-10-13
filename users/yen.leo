@@ -18,7 +18,7 @@
 <v t="leo.20151213173830.1" a="E"><vh>假如要在近端檢視, 使用下列按鈕</vh>
 <v t="leo.20151213085727.1"><vh>@button pelican-blog</vh></v>
 </v>
-<v t="amd.20151215180106.1"><vh>設定與開發</vh>
+<v t="amd.20151215180106.1" a="E"><vh>設定與開發</vh>
 <v t="amd.20151216151325.1" a="E"><vh>@clean index.html</vh>
 <v t="amd.20161004083800.1" a="E"><vh>html</vh>
 <v t="amd.20161004083800.2"><vh>head</vh></v>
@@ -102,12 +102,18 @@
 </v>
 </v>
 </v>
-<v t="amd.20160106094754.1"><vh>@path ./../content/pages</vh>
+<v t="amd.20160106094754.1" a="E"><vh>@path ./../content/pages</vh>
 <v t="amd.20160106094829.1" a="E"><vh>yen 所寫的 pages 文章</vh>
 <v t="amd.20160106094844.1"><vh>@edit pages_1.md</vh></v>
 </v>
 </v>
 <v t="amd.20161004202833.1"><vh>@edit ../README.md</vh></v>
+<v t="leo.20161013154911.1" a="E"><vh>Recovered Nodes</vh>
+<v t="leo.20161013154911.2"><vh>Recovered node "HTML 投影片 (標題)" from @clean index.html</vh>
+<v t="leo.20161013154911.3"><vh>old:HTML 投影片 (標題)</vh></v>
+<v t="leo.20161013154911.4"><vh>new:HTML 投影片 (標題)</vh></v>
+</v>
+</v>
 </vnodes>
 <tnodes>
 <t tx="amd.20151215170031.1"></t>
@@ -341,15 +347,18 @@ apply broader style changes, like switching the page background.
 
 </t>
 <t tx="amd.20161004083800.8">&lt;section&gt;
-    &lt;h1&gt;2016Fall CADPA 課程&lt;/h1&gt;
-    &lt;h3&gt;The HTML Presentation Framework&lt;/h3&gt;
+    &lt;h1&gt;9/29 作業影片&lt;/h1&gt;
+    &lt;iframe src="https://player.vimeo.com/video/185308413" width="640" height="362" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;a href="https://vimeo.com/185308413"&gt;40423119&lt;/a&gt; from &lt;a href="https://vimeo.com/user45127671"&gt;404231119&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
+    &lt;small&gt;
+    &lt;h4&gt;心得：第一次用Solvespace這套軟體繪製3D零件，介面功能都不太熟悉，在繪圖的過程中容易畫錯，但經過幾次的練習之後，慢慢地熟悉Solvespace的功能。&lt;/h4&gt;
+    &lt;/small&gt;
     &lt;p&gt;
     &lt;small&gt;
     Created by &lt;a href="http://hakim.se"&gt;Hakim El Hattab&lt;/a&gt; / 
     &lt;a href="http://twitter.com/hakimel"&gt;@hakimel&lt;/a&gt;
     &lt;/small&gt;
     &lt;/p&gt;
-    
     &lt;a href="blog/index.html"&gt;blog&lt;/a&gt;
 &lt;/section&gt;
 </t>
@@ -455,9 +464,9 @@ make.start()
 
 						
 </t>
-<t tx="amd.20161004095719.2"># 2016Fall CADPA 課程
+<t tx="amd.20161004095719.2"># 40423119 簡報
 
-### THE HTML PRESENTATION FRAMEWORK
+### 設計二甲 第三組
 
 &lt;small&gt;
 Created by [Hakim El Hattab](http://hakim.se)
@@ -741,5 +750,57 @@ PLUGINS = ['liquid_tags.notebook', 'summary']
 <t tx="leo.20151213230957.1"># 設定網誌以 md 檔案建立的 file system date 為準, 無需自行設定
 
 DEFAULT_DATE = 'fs'</t>
+<t tx="leo.20161013154911.1"></t>
+<t tx="leo.20161013154911.2">(uncached) amd.20161004083800.8
+Diff...
+  &lt;section&gt;
+      &lt;h1&gt;9/29 作業影片&lt;/h1&gt;
+-     &lt;small&gt;
+      &lt;h4&gt;心得：第一次用Solvespace這套軟體繪製3D零件，介面功能都不太熟悉，在繪圖的過程中容易畫錯，但經過幾次的練習之後，慢慢地熟悉Solvespace的功能。&lt;/h4&gt;
+-     &lt;/small&gt;
+      &lt;iframe src="https://player.vimeo.com/video/185308413" width="640" height="362" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+  &lt;p&gt;&lt;a href="https://vimeo.com/185308413"&gt;40423119&lt;/a&gt; from &lt;a href="https://vimeo.com/user45127671"&gt;404231119&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
+      &lt;p&gt;
+      &lt;small&gt;
+      Created by &lt;a href="http://hakim.se"&gt;Hakim El Hattab&lt;/a&gt; / 
+      &lt;a href="http://twitter.com/hakimel"&gt;@hakimel&lt;/a&gt;
+      &lt;/small&gt;
+      &lt;/p&gt;
+      
+      &lt;a href="blog/index.html"&gt;blog&lt;/a&gt;
+  &lt;/section&gt;
+</t>
+<t tx="leo.20161013154911.3">&lt;section&gt;
+    &lt;h1&gt;9/29 作業影片&lt;/h1&gt;
+    &lt;h4&gt;心得：第一次用Solvespace這套軟體繪製3D零件，介面功能都不太熟悉，在繪圖的過程中容易畫錯，但經過幾次的練習之後，慢慢地熟悉Solvespace的功能。&lt;/h4&gt;
+    &lt;iframe src="https://player.vimeo.com/video/185308413" width="640" height="362" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;a href="https://vimeo.com/185308413"&gt;40423119&lt;/a&gt; from &lt;a href="https://vimeo.com/user45127671"&gt;404231119&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
+    &lt;p&gt;
+    &lt;small&gt;
+    Created by &lt;a href="http://hakim.se"&gt;Hakim El Hattab&lt;/a&gt; / 
+    &lt;a href="http://twitter.com/hakimel"&gt;@hakimel&lt;/a&gt;
+    &lt;/small&gt;
+    &lt;/p&gt;
+    
+    &lt;a href="blog/index.html"&gt;blog&lt;/a&gt;
+&lt;/section&gt;
+</t>
+<t tx="leo.20161013154911.4">&lt;section&gt;
+    &lt;h1&gt;9/29 作業影片&lt;/h1&gt;
+    &lt;small&gt;
+    &lt;h4&gt;心得：第一次用Solvespace這套軟體繪製3D零件，介面功能都不太熟悉，在繪圖的過程中容易畫錯，但經過幾次的練習之後，慢慢地熟悉Solvespace的功能。&lt;/h4&gt;
+    &lt;/small&gt;
+    &lt;iframe src="https://player.vimeo.com/video/185308413" width="640" height="362" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;a href="https://vimeo.com/185308413"&gt;40423119&lt;/a&gt; from &lt;a href="https://vimeo.com/user45127671"&gt;404231119&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
+    &lt;p&gt;
+    &lt;small&gt;
+    Created by &lt;a href="http://hakim.se"&gt;Hakim El Hattab&lt;/a&gt; / 
+    &lt;a href="http://twitter.com/hakimel"&gt;@hakimel&lt;/a&gt;
+    &lt;/small&gt;
+    &lt;/p&gt;
+    
+    &lt;a href="blog/index.html"&gt;blog&lt;/a&gt;
+&lt;/section&gt;
+</t>
 </tnodes>
 </leo_file>

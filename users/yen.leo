@@ -99,6 +99,7 @@
 <v t="amd.20160106093454.1" a="E"><vh>yen 所寫的網誌文章</vh>
 <v t="amd.20160727114506.1" a="E"><vh>201609</vh>
 <v t="amd.20160727120222.1"><vh>@edit 20160921.md</vh></v>
+<v t="leo.20161013160039.1"><vh>@edit 20160922.md</vh></v>
 </v>
 </v>
 </v>
@@ -350,7 +351,7 @@ apply broader style changes, like switching the page background.
     &lt;h1&gt;9/29 作業影片&lt;/h1&gt;
     &lt;iframe src="https://player.vimeo.com/video/185308413" width="640" height="362" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
 &lt;p&gt;&lt;a href="https://vimeo.com/185308413"&gt;40423119&lt;/a&gt; from &lt;a href="https://vimeo.com/user45127671"&gt;404231119&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
-    &lt;small&gt;
+        &lt;small&gt;
     &lt;h4&gt;心得：第一次用Solvespace這套軟體繪製3D零件，介面功能都不太熟悉，在繪圖的過程中容易畫錯，但經過幾次的練習之後，慢慢地熟悉Solvespace的功能。&lt;/h4&gt;
     &lt;/small&gt;
     &lt;p&gt;
@@ -359,6 +360,7 @@ apply broader style changes, like switching the page background.
     &lt;a href="http://twitter.com/hakimel"&gt;@hakimel&lt;/a&gt;
     &lt;/small&gt;
     &lt;/p&gt;
+    
     &lt;a href="blog/index.html"&gt;blog&lt;/a&gt;
 &lt;/section&gt;
 </t>

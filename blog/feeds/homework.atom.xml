@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>2016Fall 課程網誌 (虎尾科大MDE)</title><link href="./" rel="alternate"></link><link href="./feeds/homework.atom.xml" rel="self"></link><id>./</id><updated>2016-10-27T11:00:00+08:00</updated><entry><title>40423119 10/27作業</title><link href="./40423119-1027zuo-ye.html" rel="alternate"></link><published>2016-10-27T11:00:00+08:00</published><updated>2016-10-27T11:00:00+08:00</updated><author><name>40423119</name></author><id>tag:,2016-10-27:./40423119-1027zuo-ye.html</id><summary type="html">&lt;p&gt;40423119 10/27作業&lt;/p&gt;
-
-
-&lt;p&gt;&lt;a href="http://imgur.com/jHKmrj4"&gt;&lt;img src="http://imgur.com/jHKmrj4.png" title="source: imgur.com" /&gt;&lt;/a&gt;
-&lt;p&gt; 心得:可以非常簡單的畫出四連桿機構運動路線。&lt;/p&gt;
-&lt;p&gt;Solvespace 四連桿圖檔:&lt;/p&gt;
-&lt;p&gt;&lt;a href="./../w7/40423119 w7.csv"&gt;40423119 w7.csv&lt;/a&gt; (請以滑鼠右鍵存檔)&lt;/p&gt;
-&lt;p&gt;&lt;a href="./../w7/40423119 w7.slvs"&gt;40423119 w7.slvs&lt;/a&gt; (請以滑鼠右鍵存檔)&lt;/p&gt;&lt;/p&gt;</summary><category term="作業"></category></entry><entry><title>40423119 11/17 fourbar</title><link href="./40423119-1117-fourbar.html" rel="alternate"></link><published>2016-10-27T11:00:00+08:00</published><updated>2016-10-27T11:00:00+08:00</updated><author><name>40423119</name></author><id>tag:,2016-10-27:./40423119-1117-fourbar.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>2016Fall 課程網誌 (虎尾科大MDE)</title><link href="./" rel="alternate"></link><link href="./feeds/homework.atom.xml" rel="self"></link><id>./</id><updated>2016-11-27T16:30:00+08:00</updated><entry><title>40423119 11/17 fourbar</title><link href="./40423119-1117-fourbar.html" rel="alternate"></link><published>2016-11-27T16:30:00+08:00</published><updated>2016-11-27T16:30:00+08:00</updated><author><name>40423119</name></author><id>tag:,2016-11-27:./40423119-1117-fourbar.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
 
 &lt;p&gt;直接利用 Solvespace Analyze-Trace Point-Stop Trace 得到下列繞行路徑:&lt;/p&gt;
 
@@ -14,4 +7,11 @@
 
 &lt;p&gt;將所得到的點座標 .csv 以 Excel 畫圖, 得到:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src="./../w7/cadpa_w10_4bar_1.png" width="800" /&gt;&lt;/p&gt;</summary><category term="作業"></category></entry></feed>
+&lt;p&gt;&lt;img src="./../w7/cadpa_w10_4bar_1.png" width="800" /&gt;&lt;/p&gt;</summary><category term="作業"></category></entry><entry><title>40423119 10/27作業</title><link href="./40423119-1027zuo-ye.html" rel="alternate"></link><published>2016-10-27T11:00:00+08:00</published><updated>2016-10-27T11:00:00+08:00</updated><author><name>40423119</name></author><id>tag:,2016-10-27:./40423119-1027zuo-ye.html</id><summary type="html">&lt;p&gt;40423119 10/27作業&lt;/p&gt;
+
+
+&lt;p&gt;&lt;a href="http://imgur.com/jHKmrj4"&gt;&lt;img src="http://imgur.com/jHKmrj4.png" title="source: imgur.com" /&gt;&lt;/a&gt;
+&lt;p&gt; 心得:可以非常簡單的畫出四連桿機構運動路線。&lt;/p&gt;
+&lt;p&gt;Solvespace 四連桿圖檔:&lt;/p&gt;
+&lt;p&gt;&lt;a href="./../w7/40423119 w7.csv"&gt;40423119 w7.csv&lt;/a&gt; (請以滑鼠右鍵存檔)&lt;/p&gt;
+&lt;p&gt;&lt;a href="./../w7/40423119 w7.slvs"&gt;40423119 w7.slvs&lt;/a&gt; (請以滑鼠右鍵存檔)&lt;/p&gt;&lt;/p&gt;</summary><category term="作業"></category></entry></feed>

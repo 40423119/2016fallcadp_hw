@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Created by Leo: http://leoeditor.com/leo_toc.html -->
-<?xml-stylesheet ekr_test ?>
 <leo_file xmlns:leo="http://leoeditor.com/namespaces/leo-python-editor/1.1" >
 <leo_header file_format="2" tnodes="0" max_tnode_index="0" clone_windows="0"/>
 <globals body_outline_ratio="0.5" body_secondary_ratio="0.5">
@@ -58,6 +57,7 @@
 <v t="leo.20161010174437.1"><vh>@edit 20160929.md</vh></v>
 <v t="leo.20161006234714.1"><vh>@edit 20161006.md</vh></v>
 <v t="leo.20161103001225.1"><vh>@edit 20161027.md</vh></v>
+<v t="leo.20161117160848.1"><vh>@edit 20161117.md</vh></v>
 </v>
 </v>
 </v>

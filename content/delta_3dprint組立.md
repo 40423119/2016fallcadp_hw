@@ -10,3 +10,8 @@ Author: 40423119
 
 <iframe src="https://player.vimeo.com/video/199425850" width="640" height="399" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 <p><a href="https://vimeo.com/199425850">delta 3dprint-1</a> from <a href="https://vimeo.com/user45127671">404231119</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+頂座部分組立
+
+<iframe src="https://player.vimeo.com/video/199432566" width="640" height="399" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<p><a href="https://vimeo.com/199432566">delta 3dprint-2</a> from <a href="https://vimeo.com/user45127671">404231119</a> on <a href="https://vimeo.com">Vimeo</a>.</p>

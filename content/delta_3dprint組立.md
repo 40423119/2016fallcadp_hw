@@ -19,3 +19,7 @@ Author: 40423119
 限位開關、料架、滑軌及滑塊組立
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/tACYXmedZMM" frameborder="0" allowfullscreen></iframe>
+
+噴頭、連桿及滑塊座組立
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/y3WANvtrqlw" frameborder="0" allowfullscreen></iframe>

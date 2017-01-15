@@ -22,3 +22,9 @@ Author: 40423119
 
 <iframe src="https://player.vimeo.com/video/194834359" width="640" height="361" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 <p><a href="https://vimeo.com/194834359">2-3-2 HomeWork</a> from <a href="https://vimeo.com/user45127671">404231119</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+##Week06
+6-2-Homework
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EkeQjJ224oU" frameborder="0" allowfullscreen></iframe>
+

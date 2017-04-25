@@ -5,35 +5,42 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>./</loc>
-<lastmod>2017-01-15T19:44:44-00:00</lastmod>
+<lastmod>2017-04-25T17:37:32-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./archives.html</loc>
-<lastmod>2017-01-15T19:44:44-00:00</lastmod>
+<lastmod>2017-04-25T17:37:32-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./tags.html</loc>
-<lastmod>2017-01-15T19:44:44-00:00</lastmod>
+<lastmod>2017-04-25T17:37:32-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./categories.html</loc>
-<lastmod>2017-01-15T19:44:44-00:00</lastmod>
+<lastmod>2017-04-25T17:37:32-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./pages/about/</loc>
-<lastmod>2017-01-15T19:37:30+08:00</lastmod>
+<lastmod>2017-04-25T17:20:13+08:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>./40423119_si-lian-gan-ji-gou-xie-tong-trace-point-cha-yan.html</loc>
+<lastmod>2017-04-13T20:17:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
@@ -130,6 +137,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>./category/qi-zhong-kao.html</loc>
+<lastmod>2017-04-13T20:17:00+08:06</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
 <loc>./category/shang-ke-bi-ji.html</loc>
 <lastmod>2016-09-29T11:00:00+08:06</lastmod>
 <changefreq>daily</changefreq>
@@ -151,15 +165,8 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>./tag/homework.html</loc>
-<lastmod>2017-01-11T23:30:00+08:06</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>./tag/qi-mo-zong-jie.html</loc>
-<lastmod>2017-01-12T15:30:00+08:06</lastmod>
+<loc>./tag/qi-zhong-xie-tong-cha-yan-yu-zi-ping.html</loc>
+<lastmod>2017-04-13T20:17:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -172,8 +179,22 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>./author/40423119.html</loc>
+<loc>./tag/qi-mo-zong-jie.html</loc>
 <lastmod>2017-01-12T15:30:00+08:06</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>./tag/homework.html</loc>
+<lastmod>2017-01-11T23:30:00+08:06</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>./author/40423119.html</loc>
+<lastmod>2017-04-13T20:17:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>

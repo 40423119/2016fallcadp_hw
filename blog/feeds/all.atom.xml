@@ -1,5 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>2016Fall 電腦輔助設計實習 (虎尾科大MDE)</title><link href="./" rel="alternate"></link><link href="./feeds/all.atom.xml" rel="self"></link><id>./</id><updated>2017-01-12T15:30:00+08:00</updated><entry><title>40423119 電腦輔助設計實習課程總結</title><link href="./40423119-dian-nao-fu-zhu-she-ji-shi-xi-ke-cheng-zong-jie.html" rel="alternate"></link><updated>2017-01-12T15:30:00+08:00</updated><author><name>40423119</name></author><id>tag:,2017-01-12:./40423119-dian-nao-fu-zhu-she-ji-shi-xi-ke-cheng-zong-jie.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>2016Fall 電腦輔助設計實習 (虎尾科大MDE)</title><link href="./" rel="alternate"></link><link href="./feeds/all.atom.xml" rel="self"></link><id>./</id><updated>2017-04-13T20:17:00+08:00</updated><entry><title>40423119_四連桿機構協同 Trace Point 查驗</title><link href="./40423119_si-lian-gan-ji-gou-xie-tong-trace-point-cha-yan.html" rel="alternate"></link><published>2017-04-13T20:17:00+08:00</published><updated>2017-04-13T20:17:00+08:00</updated><author><name>40423119</name></author><id>tag:,2017-04-13:./40423119_si-lian-gan-ji-gou-xie-tong-trace-point-cha-yan.html</id><summary type="html">&lt;p&gt;1.四連桿機構協同 Trace Point 查驗&lt;/p&gt;
+
+
+&lt;h2&gt;(二) 四連桿機構協同 Trace Point 查驗&lt;/h2&gt;
+&lt;p&gt;四連桿機構運動軌跡影片&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/agb9hsjFZGo" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;四連桿Trace Point 查驗圖片&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://imgur.com/Jojcjxr"&gt;&lt;img src="http://i.imgur.com/Jojcjxr.png" title="source: imgur.com" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;利用Excel 查驗四連桿Trace Point 圖片&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://imgur.com/tQ6GUcc"&gt;&lt;img src="http://i.imgur.com/tQ6GUcc.png" title="source: imgur.com" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;!-- 導入 Brython 標準程式庫 --&gt;
+
+&lt;script type="text/javascript" src="https://cdn.rawgit.com/brython-dev/brython/master/www/src/brython_dist.js"&gt;
+&lt;/script&gt;
+
+&lt;!-- 啟動 Brython --&gt;
+
+&lt;script&gt;
+window.onload=function(){
+brython(1);
+}
+&lt;/script&gt;
+
+&lt;!-- 以下實際利用  Brython 畫四連桿 trace point 路徑--&gt;
+
+&lt;canvas id="fourbar" width="600" height="400"&gt;&lt;/canvas&gt;
+
+&lt;div id="container1"&gt;&lt;/div&gt;
+
+&lt;script type="text/python3"&gt;
+from browser import document as doc
+from browser import html
+import math
+# 準備繪圖畫布
+canvas = doc["fourbar"]
+container1 = doc['container1']
+ctx = canvas.getContext("2d")
+
+fourbar_data = open("./../work/40423119.csv").read()
+fourbar_list = fourbar_data.splitlines()
+#container1 &lt;= fourbar_list[0]
+# 以下可以利用 ctx 物件進行畫圖
+# 先畫一條直線
+ctx.beginPath()
+# 設定線的寬度為 1 個單位
+ctx.lineWidth = 1
+# 利用 transform 將 y 座標反轉, 且 offset canvas.height
+# (X scale, X skew, Y skew, Y scale, X offset, Y offset)
+# 配合圖形位置進行座標轉換
+ctx.transform(1, 0, 0, -1, canvas.width/2+250, canvas.height/2+100)
+# 畫出 x 與 y 座標線
+# 各座標值放大 8 倍
+ratio = 8
+ctx.moveTo(0, 0)
+ctx.lineTo(-30*ratio, 0)
+start_point = fourbar_list[0].split(",")
+ctx.moveTo(float(start_point[0])*ratio, float(start_point[1])*ratio)
+count = 0
+for data in fourbar_list[1:]:
+    point = data.split(",")
+    #count = count + 1
+    #container1 &lt;= str(count) + ":" + point[0] + "," + point[1]
+    #container1 &lt;= html.BR()
+    ctx.lineTo(float(point[0])*ratio, float(point[1])*ratio)
+# 設定顏色為藍色, 也可以使用 "rgb(0, 0, 255)" 字串設定顏色值
+ctx.strokeStyle = "blue"
+# 實際執行畫線
+ctx.stroke()
+ctx.closePath()
+&lt;/script&gt;</summary><category term="期中協同查驗與自評"></category></entry><entry><title>40423119 電腦輔助設計實習課程總結</title><link href="./40423119-dian-nao-fu-zhu-she-ji-shi-xi-ke-cheng-zong-jie.html" rel="alternate"></link><published>2017-01-12T15:30:00+08:00</published><updated>2017-01-12T15:30:00+08:00</updated><author><name>40423119</name></author><id>tag:,2017-01-12:./40423119-dian-nao-fu-zhu-she-ji-shi-xi-ke-cheng-zong-jie.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
 
 &lt;h2&gt;期末課程總結&lt;/h2&gt;
 &lt;p&gt;&lt;a href="https://40423119.github.io/2016fallcadp_hw/blog/40423119-shang-ke-bi-ji.html"&gt;上課筆記&lt;/a&gt;&lt;/p&gt;
@@ -12,7 +82,7 @@
 &lt;p&gt;&lt;a href="https://40423119.github.io/2016fallcadp_hw/blog/40423119-onshape-homework.html"&gt;Onshape HomeWork&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://40423119.github.io/2016fallcadp_hw/blog/40423119-onshape-lian-gan-zu-li.html"&gt;Onshape 連桿組立&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://40423119.github.io/2016fallcadp_hw/blog/40423119-delta_3dprintzu-li.html"&gt;delta_3dprint組立&lt;/a&gt;&lt;/p&gt;
-&lt;h2&gt;期末心得：以上是這學期的課程總結，從第1週到學期末共18週，我學到了很多，這學期的課程讓我收穫很多&lt;/h2&gt;</summary><category term="期末總結"></category></entry><entry><title>40423119 delta_3dprint組立</title><link href="./40423119-delta_3dprintzu-li.html" rel="alternate"></link><updated>2017-01-11T23:30:00+08:00</updated><author><name>40423119</name></author><id>tag:,2017-01-11:./40423119-delta_3dprintzu-li.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+&lt;h2&gt;期末心得：以上是這學期的課程總結，從第1週到學期末共18週，我學到了很多，這學期的課程讓我收穫很多&lt;/h2&gt;</summary><category term="期末總結"></category></entry><entry><title>40423119 delta_3dprint組立</title><link href="./40423119-delta_3dprintzu-li.html" rel="alternate"></link><published>2017-01-11T23:30:00+08:00</published><updated>2017-01-11T23:30:00+08:00</updated><author><name>40423119</name></author><id>tag:,2017-01-11:./40423119-delta_3dprintzu-li.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
 
 &lt;h2&gt;delta_3dprint組立過程影片&lt;/h2&gt;
 &lt;p&gt;底座部分組立&lt;/p&gt;
@@ -29,13 +99,13 @@
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/tACYXmedZMM" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 
 &lt;p&gt;噴頭、連桿及滑塊座組立&lt;/p&gt;
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/y3WANvtrqlw" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</summary><category term="HomeWork"></category></entry><entry><title>40423119 Onshape 連桿組立</title><link href="./40423119-onshape-lian-gan-zu-li.html" rel="alternate"></link><updated>2017-01-09T23:30:00+08:00</updated><author><name>40423119</name></author><id>tag:,2017-01-09:./40423119-onshape-lian-gan-zu-li.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/y3WANvtrqlw" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</summary><category term="HomeWork"></category></entry><entry><title>40423119 Onshape 連桿組立</title><link href="./40423119-onshape-lian-gan-zu-li.html" rel="alternate"></link><published>2017-01-09T23:30:00+08:00</published><updated>2017-01-09T23:30:00+08:00</updated><author><name>40423119</name></author><id>tag:,2017-01-09:./40423119-onshape-lian-gan-zu-li.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
 
 &lt;h2&gt;MECHANISM TUTORIAL&lt;/h2&gt;
 &lt;p&gt;組立過程影片&lt;/p&gt;
 &lt;iframe src="https://player.vimeo.com/video/198690908" width="640" height="361" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
 
-&lt;p&gt;&lt;a href="https://vimeo.com/198690908"&gt;Onshape連桿組立&lt;/a&gt; from &lt;a href="https://vimeo.com/user45127671"&gt;404231119&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</summary><category term="HomeWork"></category></entry><entry><title>40423119 12/20</title><link href="./40423119-1220.html" rel="alternate"></link><updated>2016-12-20T16:30:00+08:00</updated><author><name>40423119</name></author><id>tag:,2016-12-20:./40423119-1220.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+&lt;p&gt;&lt;a href="https://vimeo.com/198690908"&gt;Onshape連桿組立&lt;/a&gt; from &lt;a href="https://vimeo.com/user45127671"&gt;404231119&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</summary><category term="HomeWork"></category></entry><entry><title>40423119 12/20</title><link href="./40423119-1220.html" rel="alternate"></link><published>2016-12-20T16:30:00+08:00</published><updated>2016-12-20T16:30:00+08:00</updated><author><name>40423119</name></author><id>tag:,2016-12-20:./40423119-1220.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
 
 &lt;h2&gt;自製3D列印機組立過程&lt;/h2&gt;
 &lt;p&gt;&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/F4Qu9y-aVOE" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
@@ -49,7 +119,7 @@
 &lt;h2&gt;圓盤&lt;/h2&gt;
 &lt;p&gt;&lt;iframe src="./../w7/3d/20161217-3.html" width="800" height="600"&gt;&lt;/iframe&gt;&lt;/p&gt;
 &lt;h2&gt;自製3D列印機&lt;/h2&gt;
-&lt;p&gt;&lt;iframe src="./../w7/3d/20161217-2.html" width="800" height="600"&gt;&lt;/iframe&gt;&lt;/p&gt;</summary><category term="HomeWork"></category></entry><entry><title>40423119 Onshape HomeWork</title><link href="./40423119-onshape-homework.html" rel="alternate"></link><updated>2016-12-08T16:30:00+08:00</updated><author><name>40423119</name></author><id>tag:,2016-12-08:./40423119-onshape-homework.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+&lt;p&gt;&lt;iframe src="./../w7/3d/20161217-2.html" width="800" height="600"&gt;&lt;/iframe&gt;&lt;/p&gt;</summary><category term="HomeWork"></category></entry><entry><title>40423119 Onshape HomeWork</title><link href="./40423119-onshape-homework.html" rel="alternate"></link><published>2016-12-08T16:30:00+08:00</published><updated>2016-12-08T16:30:00+08:00</updated><author><name>40423119</name></author><id>tag:,2016-12-08:./40423119-onshape-homework.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
 
 &lt;h2&gt;Week01&lt;/h2&gt;
 &lt;p&gt;1-2-Homework&lt;/p&gt;
@@ -71,10 +141,10 @@
 
 &lt;h2&gt;Week06&lt;/h2&gt;
 &lt;p&gt;6-2-Homework&lt;/p&gt;
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/EkeQjJ224oU" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</summary><category term="HomeWork"></category></entry><entry><title>40423119 12/1</title><link href="./40423119-121.html" rel="alternate"></link><updated>2016-12-01T16:30:00+08:00</updated><author><name>40423119</name></author><id>tag:,2016-12-01:./40423119-121.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/EkeQjJ224oU" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</summary><category term="HomeWork"></category></entry><entry><title>40423119 12/1</title><link href="./40423119-121.html" rel="alternate"></link><published>2016-12-01T16:30:00+08:00</published><updated>2016-12-01T16:30:00+08:00</updated><author><name>40423119</name></author><id>tag:,2016-12-01:./40423119-121.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
 
 &lt;h2&gt;Solvespace組合圖&lt;/h2&gt;
-&lt;iframe src="./../40423119_4.html" width="800" height="600"&gt;&lt;/iframe&gt;</summary><category term="HomeWork"></category></entry><entry><title>40423119 11/24</title><link href="./40423119-1124.html" rel="alternate"></link><updated>2016-11-24T16:30:00+08:00</updated><author><name>40423119</name></author><id>tag:,2016-11-24:./40423119-1124.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+&lt;iframe src="./../40423119_4.html" width="800" height="600"&gt;&lt;/iframe&gt;</summary><category term="HomeWork"></category></entry><entry><title>40423119 11/24</title><link href="./40423119-1124.html" rel="alternate"></link><published>2016-11-24T16:30:00+08:00</published><updated>2016-11-24T16:30:00+08:00</updated><author><name>40423119</name></author><id>tag:,2016-11-24:./40423119-1124.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
 
 &lt;h2&gt;Solvespace&lt;/h2&gt;
 &lt;h3&gt;1. Parts (零件繪製)&lt;/h3&gt;
@@ -101,7 +171,7 @@
 &lt;img src="./../w7/40423119_1124_2.png" width="800"&gt;&lt;/p&gt;
 &lt;h3&gt;4. Compiled &amp;amp; API (編譯與延伸應用)&lt;/h3&gt;
 &lt;p&gt;&lt;p&gt;使用 Virtualbox 虛擬主機執行 Windows 64 位元與 Ubuntu 64 位元環境中的編譯與延伸應用.&lt;/p&gt;
-&lt;img src="./../w7/40423119.png" width="800"&gt;&lt;/p&gt;</summary><category term="HomeWork"></category></entry><entry><title>40423119 11/17 fourbar</title><link href="./40423119-1117-fourbar.html" rel="alternate"></link><updated>2016-11-17T16:30:00+08:00</updated><author><name>40423119</name></author><id>tag:,2016-11-17:./40423119-1117-fourbar.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+&lt;img src="./../w7/40423119.png" width="800"&gt;&lt;/p&gt;</summary><category term="HomeWork"></category></entry><entry><title>40423119 11/17 fourbar</title><link href="./40423119-1117-fourbar.html" rel="alternate"></link><published>2016-11-17T16:30:00+08:00</published><updated>2016-11-17T16:30:00+08:00</updated><author><name>40423119</name></author><id>tag:,2016-11-17:./40423119-1117-fourbar.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
 
 &lt;p&gt;直接利用 Solvespace Analyze-Trace Point-Stop Trace 得到下列繞行路徑:&lt;/p&gt;
 
@@ -109,21 +179,21 @@
 
 &lt;p&gt;將所得到的點座標 .csv 以 Excel 畫圖, 得到:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src="./../w7/cadpa_w10_4bar_1.png" width="800" /&gt;&lt;/p&gt;</summary><category term="HomeWork"></category></entry><entry><title>40423119 10/27作業</title><link href="./40423119-1027zuo-ye.html" rel="alternate"></link><updated>2016-10-27T11:00:00+08:00</updated><author><name>40423119</name></author><id>tag:,2016-10-27:./40423119-1027zuo-ye.html</id><summary type="html">&lt;p&gt;40423119 10/27作業&lt;/p&gt;
+&lt;p&gt;&lt;img src="./../w7/cadpa_w10_4bar_1.png" width="800" /&gt;&lt;/p&gt;</summary><category term="HomeWork"></category></entry><entry><title>40423119 10/27作業</title><link href="./40423119-1027zuo-ye.html" rel="alternate"></link><published>2016-10-27T11:00:00+08:00</published><updated>2016-10-27T11:00:00+08:00</updated><author><name>40423119</name></author><id>tag:,2016-10-27:./40423119-1027zuo-ye.html</id><summary type="html">&lt;p&gt;40423119 10/27作業&lt;/p&gt;
 
 
 &lt;p&gt;&lt;a href="http://imgur.com/jHKmrj4"&gt;&lt;img src="http://imgur.com/jHKmrj4.png" title="source: imgur.com" /&gt;&lt;/a&gt;
 &lt;p&gt; 心得:可以非常簡單的畫出四連桿機構運動路線。&lt;/p&gt;
 &lt;p&gt;Solvespace 四連桿圖檔:&lt;/p&gt;
 &lt;p&gt;&lt;a href="./../w7/40423119 w7.csv"&gt;40423119 w7.csv&lt;/a&gt; (請以滑鼠右鍵存檔)&lt;/p&gt;
-&lt;p&gt;&lt;a href="./../w7/40423119 w7.slvs"&gt;40423119 w7.slvs&lt;/a&gt; (請以滑鼠右鍵存檔)&lt;/p&gt;&lt;/p&gt;</summary><category term="作業"></category></entry><entry><title>40423119 9/29作業</title><link href="./40423119-929zuo-ye.html" rel="alternate"></link><updated>2016-10-06T11:00:00+08:00</updated><author><name>40423119</name></author><id>tag:,2016-10-06:./40423119-929zuo-ye.html</id><summary type="html">&lt;p&gt;40423119 9/29作業&lt;/p&gt;
+&lt;p&gt;&lt;a href="./../w7/40423119 w7.slvs"&gt;40423119 w7.slvs&lt;/a&gt; (請以滑鼠右鍵存檔)&lt;/p&gt;&lt;/p&gt;</summary><category term="作業"></category></entry><entry><title>40423119 9/29作業</title><link href="./40423119-929zuo-ye.html" rel="alternate"></link><published>2016-10-06T11:00:00+08:00</published><updated>2016-10-06T11:00:00+08:00</updated><author><name>40423119</name></author><id>tag:,2016-10-06:./40423119-929zuo-ye.html</id><summary type="html">&lt;p&gt;40423119 9/29作業&lt;/p&gt;
 
 
 &lt;iframe src="https://player.vimeo.com/video/185308413" width="640" height="362" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
 
 &lt;p&gt;&lt;a href="https://vimeo.com/185308413"&gt;40423119&lt;/a&gt; from &lt;a href="https://vimeo.com/user45127671"&gt;404231119&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;心得 : 第一次用SOLVESPACE這套軟體繪製3D零件，介面功能都不太熟悉，在繪圖的過程中容易畫錯，但經過幾次的練習之後，慢慢地熟悉SOLVESPACE的功能。&lt;/p&gt;</summary><category term="作業"></category></entry><entry><title>40423119 上課筆記</title><link href="./40423119-shang-ke-bi-ji.html" rel="alternate"></link><updated>2016-09-29T11:00:00+08:00</updated><author><name>40423119</name></author><id>tag:,2016-09-29:./40423119-shang-ke-bi-ji.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+&lt;p&gt;心得 : 第一次用SOLVESPACE這套軟體繪製3D零件，介面功能都不太熟悉，在繪圖的過程中容易畫錯，但經過幾次的練習之後，慢慢地熟悉SOLVESPACE的功能。&lt;/p&gt;</summary><category term="作業"></category></entry><entry><title>40423119 上課筆記</title><link href="./40423119-shang-ke-bi-ji.html" rel="alternate"></link><published>2016-09-29T11:00:00+08:00</published><updated>2016-09-29T11:00:00+08:00</updated><author><name>40423119</name></author><id>tag:,2016-09-29:./40423119-shang-ke-bi-ji.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
 
 &lt;p&gt;2016/09/22 筆記&lt;/p&gt;
 
